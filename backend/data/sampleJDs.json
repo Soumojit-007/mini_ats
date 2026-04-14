@@ -1,21 +1,33 @@
 [
-  "Software Engineer\nShould have strong experience in Core Java, Spring Boot, Microservices, Kafka, REST API development. Hands-on experience with relational databases like MySQL or SQL Server. Experience with Docker, Kubernetes and cloud platforms like AWS. Good understanding of system design and distributed systems.\nSalary: 12 LPA",
+  "Scientific Programmer / Software Engineer\nHigh-performance scientific simulation, C/C++, Python, Linux, HPC, numerical methods, software lifecycle, debugging, version control, teamwork\nSalary: 180000 USD",
 
-  "Full Stack Developer\nLooking for experience in React, Node.js, MongoDB. Should be comfortable building REST APIs and working with modern frontend frameworks. Experience with CI/CD, Git, and cloud platforms is a plus.\nSalary: 10 LPA",
+  "Software Engineer\nCore Java, Spring Boot, Microservices, Kafka, REST APIs, SQL/NoSQL, Docker, Kubernetes, Cloud (Azure), DevOps CI/CD\nSalary: 61000 USD",
 
-  "Software Engineer\nProficient in Python, Java or C++. Strong problem solving skills and understanding of data structures and algorithms. Experience with React or Angular is a plus. Knowledge of DevOps tools and cloud environment preferred.\nSalary: 15 LPA",
+  "Software Engineer\nPython, Java, C++, React/Angular, AI/ML basics, DevOps, SaaS systems, debugging, scalable systems\nSalary: 139000 USD",
 
-  "Backend Developer\nExperience with Node.js, Express.js, MongoDB, REST APIs. Familiar with authentication (JWT), caching (Redis), and scalable backend systems. Knowledge of Docker and AWS is a plus.\nSalary: 11 LPA",
+  "Software Engineer\nPython, APIs (REST/gRPC), AWS, Kubernetes, Docker, telemetry systems, data pipelines, system design\nSalary: 130000 USD",
 
-  "Frontend Developer\nStrong experience with React, JavaScript, HTML, CSS, Tailwind. Should be able to build responsive UI and integrate APIs. Experience with performance optimization and state management is preferred.\nSalary: 9 LPA",
+  "Software Engineer\nPython, unit testing, Agile, full stack development, software testing, VM infrastructure\nSalary: 120000 USD",
 
-  "DevOps Engineer\nHands-on experience with AWS, Docker, Kubernetes, CI/CD pipelines. Familiar with monitoring tools, logging systems, and infrastructure automation. Knowledge of Linux systems required.\nSalary: 14 LPA",
+  "Software Engineer\nC++, Python, ML/AI, embedded systems, GPU programming, robotics, signal processing, system design\nSalary: 176000 USD",
 
-  "Data Engineer\nExperience in Python, SQL, ETL pipelines, data warehousing. Familiar with tools like Apache Spark, Hadoop, and cloud platforms like AWS or GCP. Strong understanding of data processing.\nSalary: 13 LPA",
+  "Software Engineer (Infrastructure)\nC/C++, Java, Python, scalable systems, API design, performance optimization, distributed systems\nSalary: 181000 USD",
 
-  "Machine Learning Engineer\nStrong knowledge of Python, Pandas, Scikit-learn, TensorFlow or PyTorch. Experience in model building, evaluation, and deployment. Understanding of data pipelines and APIs is a plus.\nSalary: 16 LPA",
+  "Software Engineer\nGeneral software development, system design, integration, maintenance, debugging\nSalary: 75500 USD",
 
-  "Full Stack Engineer\nExperience with React, Node.js, PostgreSQL, REST APIs. Should be comfortable working on both frontend and backend. Knowledge of Docker, CI/CD and cloud deployment preferred.\nSalary: 12 LPA",
+  "Full Stack Software Engineer\nC#, .NET, SQL, Angular, TypeScript, Python, PostgreSQL, UI/UX, CI/CD, scalable web apps\nSalary: 120000 USD",
 
-  "Software Developer\nExperience with JavaScript, Python, Git, Linux. Understanding of OOPs, DBMS, CN. Ability to work in agile teams and build scalable applications. Exposure to cloud platforms is a plus.\nSalary: 10 LPA"
+  "Software Engineer\nCloud services, DevOps tools (Jenkins, Kubernetes, Terraform), Node.js, React, MySQL, Python\nSalary: 110000 USD",
+
+  "C++ Software Engineer\nC++, Linux, embedded systems, real-time systems, Git, Agile, debugging, system integration\nSalary: 80000 USD",
+
+  "Full Stack Software Engineer\nJava, C#, microservices, cloud, Docker, Kubernetes, REST APIs, CI/CD, Agile\nSalary: 115000 USD",
+
+  "Software Engineer\nC/C++, Python, Java, Git, Linux, networking, cloud, CI/CD, automation\nSalary: 125000 USD",
+
+  "Software Engineer (Mid)\nJava, C#, Python, SQL, REST APIs, SDLC, unit testing, Agile, system architecture\nSalary: 105000 USD",
+
+  "Software Engineer\nJavaScript, TypeScript, Node.js, Docker, Kubernetes, ElasticSearch, CI/CD, Linux\nSalary: 100000 USD",
+
+  "Software Engineer\nLarge-scale systems, algorithms, real-time processing, debugging, data pipelines\nSalary: 115000 USD"
 ]
