@@ -7,7 +7,7 @@ import { parseResume } from "../services/resumeParser.js";
 import { parseJD } from "../services/jdParser.js";
 import { matchSkills } from "../services/matcher.js";
 import { calculateScore } from "../services/scoreCalculator.js";
-
+import Match from "../models/Match.js";
 // Fix __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -39,17 +39,15 @@ export const matchResume = async (req, res) => {
         extractedSalary = jdData.salary;
       }
 
-      const skillsAnalysis = matchSkills(
-        resumeData.skills,
-        jdData.skills
-      );
+      const skillsAnalysis = matchSkills(resumeData.skills, jdData.skills);
 
       const matchingScore = calculateScore(skillsAnalysis);
 
       return {
         jobId: jdData.jobId,
         role: jdData.role,
-        aboutRole: jdData.aboutRole,
+        // aboutRole: jdData.aboutRole,
+        aboutRole:jdData.aboutRole.replace(/Salary:.*$/i, "").trim(),
         skillsAnalysis,
         matchingScore,
       };
@@ -60,7 +58,17 @@ export const matchResume = async (req, res) => {
 
     // ✅ Take top 5
     const topJobs = matchingJobs.slice(0, 5);
-
+    try{
+      await Match.create({
+      name: resumeData.name,
+      experience: resumeData.experience,
+      skills: resumeData.skills,
+      matchingJobs: topJobs,
+      topMatch: topJobs[0] || null,
+    });
+    }catch(dbError){
+      console.error("DB save failed: ", dbError.message);
+    }
     // 4. Final response
     return res.json({
       name: resumeData.name,
