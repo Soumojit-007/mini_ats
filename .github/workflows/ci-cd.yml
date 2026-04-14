@@ -12,7 +12,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: backend   # ✅ CRITICAL FIX
+        working-directory: backend
 
     steps:
       # 1. Checkout code
@@ -25,21 +25,23 @@ jobs:
         with:
           node-version: 20
           cache: "npm"
-          cache-dependency-path: backend/package-lock.json  # ✅ FIX
+          cache-dependency-path: backend/package-lock.json
 
       # 3. Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # 4. Environment setup
-      - name: Setup environment variables
-        run: echo "PORT=5000" >> $GITHUB_ENV
+      # 4. Create .env file (🔥 FIX)
+      - name: Create .env file
+        run: |
+          echo "MONGO_URI=${{ secrets.MONGO_URI }}" > .env
+          echo "PORT=5000" >> .env
 
-      # 5. Build step (placeholder)
+      # 5. Build step (optional placeholder)
       - name: Build
         run: echo "Build successful"
 
-      # 6. Start server + health check
+      # 6. Run server + health check
       - name: Run server and test
         run: |
           node src/server.js &
